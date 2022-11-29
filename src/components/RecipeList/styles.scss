@@ -1,0 +1,24 @@
+@mixin FlexCenter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.recipes {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  margin: 48px 24px 0px 24px;
+  gap: 28px;
+
+  .filter-heading {
+    margin-left: 70px;
+    font-size: 28px;
+  }
+
+  .filtered-recipes,
+  .searched-recipes {
+    @include FlexCenter;
+  }
+}

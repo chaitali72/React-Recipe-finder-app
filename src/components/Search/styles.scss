@@ -1,0 +1,27 @@
+.search-bar {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+  padding: 32px;
+  border-radius: 16px;
+
+  .search-box {
+    background-color: #fafafa;
+    border: 0;
+    width: 100%;
+    height: 48px;
+    border-radius: 16px;
+
+    padding-left: 56px;
+    background: url("../../assets/search-icon.png") no-repeat left;
+    background-size: 40px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

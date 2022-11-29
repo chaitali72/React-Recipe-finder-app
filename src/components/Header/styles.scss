@@ -1,0 +1,34 @@
+@mixin FlexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 16%;
+  padding: 16px;
+  background: rgb(245, 48, 87);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 48, 87, 1) 3%,
+    rgba(188, 23, 23, 1) 49%
+  );
+  color: white;
+
+  ul {
+    display: flex;
+    gap: 8px;
+    list-style-type: none;
+
+    li {
+      a {
+        text-decoration: none;
+        color: inherit;
+        @include FlexCenter;
+      }
+    }
+  }
+}

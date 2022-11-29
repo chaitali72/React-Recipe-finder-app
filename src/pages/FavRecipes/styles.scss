@@ -1,0 +1,46 @@
+.fav-recipes {
+  margin: 24px;
+
+  .fav-recipes-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      border: 0;
+      height: 56px;
+      padding: 16px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e42844;
+        color: white;
+        transition: 200ms;
+      }
+    }
+  }
+  h2 {
+    font-size: 28px;
+  }
+
+  .fav-recipe-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    flex-direction: row;
+    gap: 8px;
+
+    h3 {
+      margin-top: 48px;
+    }
+  }
+}

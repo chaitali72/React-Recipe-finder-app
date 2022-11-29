@@ -1,0 +1,46 @@
+.main {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    gap: 8px;
+
+    a {
+      text-decoration: none;
+      border-radius: 16px;
+      border: 1px solid black;
+      padding: 16px;
+      color: black;
+
+      &:hover {
+        background-color: #e72a47;
+        color: white;
+        transition: 0.3s;
+        border: 0;
+      }
+    }
+
+    h1 {
+      font-size: 56px;
+      display: inline-block;
+      padding-right: 16px;
+      animation: type 0.5s alternate infinite;
+    }
+  }
+}
+
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0px 0px #888;
+  }
+
+  to {
+    box-shadow: inset -3px 0px 0px transparent;
+  }
+}
