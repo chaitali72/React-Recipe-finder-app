@@ -29,11 +29,11 @@ function RecipeItem({ idMeal, strMealThumb, strMeal }) {
 
       {!itemExist ? (
         <button onClick={() => dispatch(addFavorite(currentItem))}>
-          <MdFavoriteBorder size={60} />
+          <MdFavoriteBorder size={25} />
         </button>
       ) : (
         <button onClick={() => dispatch(removeFavorite(idMeal))}>
-          <MdFavorite size={60} />
+          <MdFavorite size={25} />
         </button>
       )}
     </div>

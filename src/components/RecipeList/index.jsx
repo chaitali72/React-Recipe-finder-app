@@ -11,6 +11,7 @@ function RecipeList() {
   const {
     chicken,
     beef,
+    Vegetarian,
     isLoading,
     items,
     searchedItems,
@@ -21,8 +22,10 @@ function RecipeList() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    dispatch(getRecipeItems("Vegetarian"));
     dispatch(getRecipeItems("chicken"));
     dispatch(getRecipeItems("beef"));
+   
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -56,6 +59,7 @@ function RecipeList() {
         <div className="home-recipes">
           <RecipeSlider item={chicken} heading="Chicken" key={chicken.idMeal} />
           <RecipeSlider item={beef} heading="Beef" key={beef.idMeal} />
+          <RecipeSlider item={Vegetarian} heading="Vegetarian" key={Vegetarian.idMeal} />
         </div>
       )}
     </div>

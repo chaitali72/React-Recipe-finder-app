@@ -49,11 +49,11 @@ function SingleRecipe() {
         <div className="recipe-info">
           {!itemExist ? (
             <button onClick={() => dispatch(addFavorite(recipeDetails))}>
-              <MdFavoriteBorder size={60} />
+              <MdFavoriteBorder size={30} />
             </button>
           ) : (
             <button onClick={() => dispatch(removeFavorite(id))}>
-              <MdFavorite size={60} />
+              <MdFavorite size={30} />
             </button>
           )}
           <h2>{recipeDetails?.strMeal}</h2>

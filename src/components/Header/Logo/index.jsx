@@ -2,7 +2,7 @@ import "./styles.scss";
 import * as Constant from "constants";
 import { setListingMode, setSearchQuery } from "features/recipe/recipeSlice";
 import React from "react";
-import { GiHamburger } from "react-icons/gi";
+import { GiHotMeal } from "react-icons/gi";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,7 @@ function Logo() {
           dispatch(setSearchQuery("")); // Clearing search input
         }}
       >
-        <GiHamburger size="40" /> Recipe<b>APP</b>
+        <GiHotMeal size="40" /> <b><h2>Good Eats</h2></b>
       </Link>
     </div>
   );
